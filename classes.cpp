@@ -3,8 +3,10 @@
 class Person
 {
 public:
+    const int& x = m_x;
     Person(const char* name, int age)
     {
+        std::cout << "Constructor called for " << name << std::endl;
         this->name = name;
         this->age = age;
     }
@@ -24,6 +26,11 @@ public:
         this->name = name;
     }
 
+    void setX(int x)
+    {
+        m_x = x;
+    }
+
     operator int()
     {
         return age;
@@ -37,8 +44,24 @@ public:
 private:
     const char* name;
     int age;
+    int m_x = 10;
 };
 
+
+class ContructorTest
+{
+public:
+    ContructorTest()
+        : x(10), y(20), z(30)
+    {
+        std::cout << "Constructor called" << std::endl;
+    }
+
+private:
+    int x;
+    int y;
+    int z;
+};
 
 int main()
 {
@@ -81,6 +104,11 @@ int main()
     std::cout << "Age of p4: " << (int)p4 << std::endl;
 
     std::cout << "Sum of ages: " << p + p4 << std::endl;
+
+    std::cout << p.x << std::endl; // 10
+    // p.x = 20; // Error: x is const
+    p.setX(20);
+    std::cout << p.x << std::endl; // 20
 
     return 0;
 }
