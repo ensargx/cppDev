@@ -57,6 +57,17 @@ public:
         std::cout << "Constructor called" << std::endl;
     }
 
+    ContructorTest(int x, int y, int z)
+        : x(x), y(y), z(z)
+    {
+        std::cout << "Constructor called with parameters" << std::endl;
+    }
+
+    void print()
+    {
+        std::cout << "x: " << x << ", y: " << y << ", z: " << z << std::endl;
+    }
+
 private:
     int x;
     int y;
@@ -109,6 +120,12 @@ int main()
     // p.x = 20; // Error: x is const
     p.setX(20);
     std::cout << p.x << std::endl; // 20
+
+    ContructorTest ct;
+    ct.print();
+
+    ContructorTest ct2(1, 2, 3);
+    ct2.print();
 
     return 0;
 }
