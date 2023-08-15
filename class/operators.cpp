@@ -45,6 +45,5 @@ int main()
     std::cout << "Scalar: " << scalar << "\n";
     // Scalar: 12
 
-
     return 0;
 }
