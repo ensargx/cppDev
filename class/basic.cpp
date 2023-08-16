@@ -59,7 +59,7 @@ int main()
     std::cout << "---------------------" << "\n";
 
     Person personA("Ali", 25);
-    personA.name = "Veli";
+    personA.name = "Veli"; // Ne kadar mantıklı?, name const olmalı
     // personA.yas = 30;   // Error: yas is private
     personA.print();
 

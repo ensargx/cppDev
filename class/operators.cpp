@@ -15,6 +15,16 @@ public:
         return Vector3D(x + rhs.x, y + rhs.y, z + rhs.z);
     }
 
+    Vector3D operator-(const Vector3D& rhs)
+    {
+        return Vector3D(x - rhs.x, y - rhs.y, z - rhs.z);
+    }
+
+    Vector3D operator*(const Vector3D& rhs)
+    {
+        return Vector3D(x * rhs.x, y * rhs.y, z * rhs.z);
+    }
+
     friend std::ostream& operator<<(std::ostream& out, const Vector3D& rhs)
     {
         out << "Vector(" << rhs.x << ", " << rhs.y << ", " << rhs.z << ")";
