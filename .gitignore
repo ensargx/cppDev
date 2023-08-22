@@ -2,3 +2,14 @@
 .vscode
 classes.cpp
 test.cpp
+
+# Visual Studio Project
+/MemoryReader/.vs/
+
+# Exclude user-specific settings
+/MemoryReader/*.suo
+/MemoryReader/*.user
+/MemoryReader/*.userosscache
+
+# Exclude Visual Studio temporary files
+/MemoryReader/*.~vs
