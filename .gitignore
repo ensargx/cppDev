@@ -13,3 +13,7 @@ test.cpp
 
 # Exclude Visual Studio temporary files
 /MemoryReader/*.~vs
+
+# Exclude output files
+/MemoryReader/out/*
+
