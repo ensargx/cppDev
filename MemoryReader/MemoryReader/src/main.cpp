@@ -3,10 +3,10 @@
 
 int main()
 {
-	Memory mem = Memory("mspaint.exe");
+    Memory mem = Memory("mspaint.exe");
 
-	std::cout << "Process id: " << mem.GetProcessId() << std::endl;	
+    std::cout << "Process id: " << mem.GetProcessId() << std::endl;	
 
-	std::cin.get();
-	return 0;
+    std::cin.get();
+    return 0;
 }
