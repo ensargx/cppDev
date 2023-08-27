@@ -24,4 +24,4 @@ test.cpp
 /MemoryReader/out/*
 /Dear ImGui/out/*
 
-/MemoryReader/
+/MemoryReader/*
