@@ -5,15 +5,22 @@ test.cpp
 
 # Visual Studio Project
 /MemoryReader/.vs/
+/Dear ImGui/.vs/
 
 # Exclude user-specific settings
 /MemoryReader/*.suo
 /MemoryReader/*.user
 /MemoryReader/*.userosscache
 
+/Dear ImGui/*.suo
+/Dear ImGui/*.user
+/Dear ImGui/*.userosscache
+
 # Exclude Visual Studio temporary files
 /MemoryReader/*.~vs
+/Dear ImGui/*.~vs
 
 # Exclude output files
 /MemoryReader/out/*
+/Dear ImGui/out/*
 
