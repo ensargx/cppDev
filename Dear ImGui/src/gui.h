@@ -11,7 +11,7 @@ namespace gui
 
     // winapi window vars
     inline HWND window = nullptr;
-    inline WNDCLASSEX wc = { };
+    inline WNDCLASSEX windowClass = { };
 
     // window movement vars
     inline POINTS position = { };
@@ -29,7 +29,7 @@ namespace gui
     void DestroyHWindow() noexcept;
 
     // Handle device creation and destruction
-    void CreateDevice() noexcept;
+    bool CreateDevice() noexcept;
     void ResetDevice() noexcept;
     void DestroyDevice() noexcept;
 
